@@ -1,0 +1,13 @@
+﻿using TaskManager.Communication.Enums;
+
+namespace TaskManager.Communication.Responses;
+
+public class TaskResponse
+{
+    public Guid Id { get; init; } = Guid.NewGuid();
+    public string Name { get; init; } = string.Empty;
+    public string Description { get; init; } = string.Empty;
+    public DateTime Deadline { get; init; }
+    public PriorityType Priority { get; init; }
+    public StatusType Status { get; init; }
+}
